@@ -28,7 +28,8 @@ p {
 }
 
 section {
-	border:	1px solid black;
+  border:	1px solid black;
+  background-color: paleturquoise;
 	width: 100%;
 	height: 200px;
 	font-family: Helvetica;
@@ -36,15 +37,7 @@ section {
 	position: relative;
 	overflow: auto;
 }
-#s1{
-  background-color: orange;
-}
-#s2{
-  background-color:white;
-}
-#s3{
-  background-color: green;
-}
+
 #chicken {
 	border: 1px solid black;
 	text-align: center;
