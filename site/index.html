@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
 </head>
+
 <body>
-  <h1>Hi welcome to site.......</h1>
-  <p>hi every one what'up</p>
+  <style>
+    #charging{
+      color: rgba(252, 134, 0, 0.233);
+    }
+  </style>
+
+  <div id="charging" class="fa"></div>
+  <script>
+    function chargebattery() {
+      var a;
+      a = document.getElementById("charging");
+      a.innerHTML = "&#xf244";
+      setTimeout(function () {
+        a.innerHTML = "&#xf243";
+      }, 1000);
+      setTimeout(function () {
+        a.innerHTML = "&#xf242";
+      }, 2000);
+      setTimeout(function () {
+        a.innerHTML = "&#xf241";
+      }, 3000);
+      setTimeout(function () {
+        a.innerHTML = "&#xf240";
+      }, 4000);
+    }
+    chargebattery(200);
+
+    setInterval(chargebattery,5000);
+    </script>
+    
+    <style>
+      #b{
+        font-size :20px; 
+        text-align: right;
+      }
+    </style>
+
+    <p id="b"> Hi my name is utkarsh what's yours? </p>
 </body>
 </html>
